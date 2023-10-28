@@ -23,7 +23,7 @@ export default function ClickableItemComponent({ children }) {
     return () => window.removeEventListener('mousemove', mouseMoveHandler);
   })
 
-  return <div onClick={(e) => { onClickItem() }} className='absolute' style={{ left: componentVariable.left, top: componentVariable.top }}>
+  return (<div onClick={(e) => { onClickItem() }} className='absolute' style={{ left: componentVariable.left, top: componentVariable.top }}>
     {children}
-  </div>
+  </div>)
 }
