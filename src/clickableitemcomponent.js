@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-export const ClickableItemComponent = ({ children }) => {
+export default function ClickableItemComponent({ children }) {
 
   const [onClicked, setClicked] = useState(false);
 
