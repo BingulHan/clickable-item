@@ -1,8 +1,6 @@
-"use strict";
-
 import React, { useEffect, useState } from 'react'
 
-export default function ClickableItemComponent({ children }) {
+export const ClickableItemComponent = ({ children }) => {
 
   const [onClicked, setClicked] = useState(false);
 
